@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Input from "../sharedUI/Input";
 import Label from "../sharedUI/Label";
 // data
-import countryDials from "../data/country_dial_info.json";
+import countryDials from "../static-data/country_dial_info.json";
 //  icons
 import eye from "../assets/icons/eye.svg";
 import Login from "./Login";

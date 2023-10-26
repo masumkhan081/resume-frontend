@@ -1,6 +1,6 @@
 import React from "react";
 import Label from "../sharedUI/Label";
-import { postHandler } from "../axios/handler";
+import { postHandler } from "../util/handler";
 //  icons
 import eye from "../assets/icons/eye.svg";
 import { Link } from "react-router-dom";

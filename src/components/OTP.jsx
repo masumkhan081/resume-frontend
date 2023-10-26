@@ -1,6 +1,6 @@
 import React from "react";
 import Label from "../sharedUI/Label";
-import { postHandler } from "../axios/handler";
+import { postHandler } from "../util/handler";
 
 export default function OTP() {
   const [otp_state, setOtp] = React.useState(["", "", "", ""]);
