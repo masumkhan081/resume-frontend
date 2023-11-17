@@ -1,34 +1,37 @@
 import React, { createContext, useEffect, useState } from "react";
 //
-export const authContext = createContext();
+export const resumeContext = createContext();
 //
 export default function Provider({ children }) {
   //
   const [user, setUser] = useState({
-    account_pic: "",
-    account_email: "",
-    account_name: "",
-    resume_name: "",
-    resume_status: false,
-    resume_email: "",
+    userName: "",
+    email: "",
+    password: ""
+  });
+  const [resume, setResume] = useState({
+    resumePic: "",
+    contactNumber: "",
+    contactMail: "",
+    name: "",
+    title: "full-stack fucker",
     dob: "",
-    address: "",
+    currentAddress: "",
+    home: "",
     github: "github.com/",
     linkedin: "linkedin.com/in/",
     portfolio: "",
-    resume_pic: "",
-    phone_number: "",
-    title: "full-stack fucker",
-    front_end_skills: [],
-    back_end_skills: [],
-    data_tier_skills: [],
-    personal_skills: [],
+    frontEndSkills: [],
+    backEndSkills: [],
+    dataTierSkills: [],
+    personalSkills: [],
     hobbies: [],
     interests: [],
     projects: [],
     educations: [],
     experiences: [],
   });
+  const [activePage, setActivePage] = useState("")
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   //
@@ -36,24 +39,15 @@ export default function Provider({ children }) {
 
   }, []);
 
-  async function create_if_new(theUser) {
-    let USER_EXISTS_IN_DB = false;
-    //
-    try {
-
-    } catch (e) {
-      console.error("Error finding: ", e);
-    }
-  }
-
-  async function get_resume_data(emal) {
+  async function getResumeData(emal) {
 
   }
-
+  function setResumeData(nextState) {
+    setResume({ ...resume, ...nextState });
+  }
   function setTheUser(nextState) {
     setUser({ ...user, ...nextState });
   }
-
   function setTheError(usedProvider) {
     let errMsg =
       "The email been used for a " +
@@ -66,13 +60,15 @@ export default function Provider({ children }) {
     // }, 2000);
   }
 
-
-
   return (
-    <authContext.Provider
+    <resumeContext.Provider
       value={{
         user,
         setTheUser,
+        resume,
+        setResumeData,
+        activePage,
+        setActivePage,
         loading,
         setLoading,
         error,
@@ -80,6 +76,6 @@ export default function Provider({ children }) {
       }}
     >
       {children}
-    </authContext.Provider>
+    </resumeContext.Provider>
   );
 }

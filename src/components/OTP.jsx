@@ -1,5 +1,5 @@
 import React from "react";
-import Label from "../sharedUI/Label";
+import Label from "../component-shared/Label";
 import { postHandler } from "../util/handler";
 
 export default function OTP() {

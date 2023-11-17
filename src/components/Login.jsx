@@ -1,12 +1,12 @@
 import React from "react";
-import Label from "../sharedUI/Label";
+import Label from "../component-shared/Label";
 import { postHandler } from "../util/handler";
 //  icons
 import eye from "../assets/icons/eye.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Input from "../sharedUI/Input";
-import Button from "../sharedUI/Button";
+import Input from "../component-shared/Input";
+import Button from "../component-shared/Button";
 //
 export default function Login() {
   const [email, setEmail] = useState("");

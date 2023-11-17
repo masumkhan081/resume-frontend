@@ -45,7 +45,7 @@ export const routes = createBrowserRouter([
             element: <Page3 />,
           },
           {
-            path: "all-together",
+            path: "summary",
             element: <Summery />,
           },
           {
