@@ -1,18 +1,50 @@
-
 #ToDo
 
-1. page-1,2,3 - layout and spacing correction
-2. nav view and auth status wise nav view 
-3. page-1,2,3 data should be added in context with validation and warning
-4. local storage for persisting
+page-1,2,3 - layout and spacing correction
+nav view and auth status wise nav view
+page-1,2,3 data should be added in context with validation and warning
+local storage for persisting
 
 
+# My React Reusable Components
 
-# React + Vite
+A personal collection of reusable React components designed to accelerate development and maintain consistent styling across multiple projects.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Available Components
 
-Currently, two official plugins are available:
+1. **Buttons**
+   - Different button styles including primary, secondary, icon buttons, etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Input Fields**
+   - Standard input fields with validation styling, password inputs, search inputs.
+
+3. **Modal Dialogs**
+   - Reusable modal component with customizable headers, footers, and content areas.
+
+4. **Form Components**
+   - Components like text areas, checkboxes, radio buttons, and dropdowns for consistent form styling.
+
+5. **Cards**
+   - Customizable card components for displaying various types of content.
+
+6. **Notifications/Alerts**
+   - Alert and notification components with multiple styles (e.g., success, error, info).
+
+7. **Pagination**
+   - Simple and configurable pagination component.
+
+8. **Loaders**
+   - Loading spinners and skeleton loaders to indicate data loading.
+
+9. **Navigation Components**
+   - Pre-styled header, footer, and sidebar components for consistent navigation.
+
+10. **Grid and List Layouts**
+   - Grid components for arranging content flexibly.
+
+## Installation
+
+1. Clone the repository:
+
+
+   git clone https://github.com/masumkhan081/my-react-reusable-components.git

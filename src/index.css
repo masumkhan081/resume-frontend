@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Iso&family=Titan+One&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=sans+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Iso&family=Titan+One&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +11,7 @@
 }
 
 .btn_nav {
-  @apply flex items-center flex-wrap overflow-hidden gap-1 bg-green-50 text-green-700 text-center px-1 py-1 rounded-md bg-gradient-to-b from-green-200 text-sm font-averia ;
+  @apply flex items-center flex-wrap overflow-hidden gap-1 bg-green-50 text-green-700 text-center px-1 py-1 rounded-md bg-gradient-to-b from-green-200 text-sm font-sans ;
 }
 .nav_icn {
   @apply w-1.25 h-1.25 text-green-900;
@@ -26,19 +26,19 @@
   @apply   flex justify-center text-lg text-orange-800 font-titan w-2/3 mx-auto pt-1 pb-0 drop-shadow-md font-semibold ;
 }
 .txt_inp_form {
-  @apply border border-br/300 font-averia outline-none rounded-md px-4 py-1;
+  @apply border border-br/300 font-sans outline-none rounded-md px-4 py-1;
 }
 .nav_drop_down {
   @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
 }
 .lbl_form {
-  @apply font-medium font-averia;
+  @apply font-medium font-sans;
 }
 .title_auth_form {
-  @apply text-sm font-averia font-normal tracking-02 text-center;
+  @apply text-sm font-sans font-normal tracking-02 text-center;
 }
 .btn_auth_toggler {
-  @apply bg-orange-600 text-orange-200 text-center px-3 rounded-md bg-gradient-to-b from-orange-900 text-sm font-averia tracking-02;
+  @apply bg-orange-600 text-orange-200 text-center px-3 rounded-md bg-gradient-to-b from-orange-900 text-sm font-sans tracking-02;
 }
 .btn_auth_option {
   @apply border border-teal-600 md:w-3/5 w-full rounded-md shadow-sm py-1 text-center;

@@ -65,7 +65,7 @@ export default {
         inter: ["Inter"],
       },
       letterSpacing: {
-        "02":"0.2rem",
+        "02": "0.2rem",
         "ls-045": "-0.045rem",
         "ls-065": "-0.065rem",
         "ls-09": "-0.09rem",
@@ -93,10 +93,9 @@ export default {
       },
       colors: {
         "pr/100": "#dcfce7",
-        "br/300":"#0d9488",
-        "br/600":"#0d9488",
-        "teal-950":"#042f2e",
- 
+        "br/300": "#0d9488",
+        "br/600": "#0d9488",
+        "teal-950": "#042f2e",
       },
     },
   },
